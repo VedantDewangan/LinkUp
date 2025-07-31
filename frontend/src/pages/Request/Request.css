@@ -1,0 +1,144 @@
+.request-page {
+  height: 100vh;
+  width: 83vw;
+}
+
+.request-page h2 {
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+  width: 78vw;
+}
+
+.req-con {
+  background-color: #030712;
+  width: 95%;
+  height: 84vh;
+  margin: auto;
+}
+
+.no-follow-request-con {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.no-follow-request-con span {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(31, 41, 55, 0.5);
+}
+
+.no-follow-request-con span i {
+  opacity: 0.6;
+  font-size: 1.6em;
+}
+
+.no-follow-request-con p {
+  width: 35%;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.follow-request-con {
+  height: 100%;
+  overflow-y: auto;
+  padding: 25px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.req-user-con {
+  display: flex;
+  background-color: #131920;
+  border-radius: 10px;
+  border: 1px solid rgba(23, 23, 23, 0.3);
+  padding: 10px 14px;
+}
+
+.req-user-first img {
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.req-user-second {
+  width: 100%;
+}
+
+.req-user-fullname {
+  display: flex;
+  padding: 10px 10px 0px 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  align-items: center;
+  gap: 10px;
+}
+
+.req-user-fullname span {
+  position: relative;
+  top: 3px;
+}
+
+.req-user-username {
+  padding: 0px 10px;
+  opacity: 0.7;
+}
+
+.req-user-bio {
+  padding: 5px 10px;
+  opacity: 0.5;
+  font-size: 0.9em;
+}
+
+.req-buts {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  gap: 15px;
+}
+
+.req-buts button {
+  outline: none;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.req-buts button:hover {
+  opacity: 1;
+}
+
+.req-buts button:first-child {
+  background-color: rgb(34, 212, 61);
+}
+
+.req-buts button:last-child {
+  background-color: rgb(253, 33, 33);
+}
+
+.req-user-time {
+  width: 100%;
+  text-align: end;
+  opacity: 0.7;
+}
+
+@media (max-width: 1020px) {
+  .request-page {
+    width: 100vw;
+  }
+}
