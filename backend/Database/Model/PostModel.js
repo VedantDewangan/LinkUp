@@ -7,6 +7,10 @@ const PostSchema = new mongoose.Schema(
       required: true,
       minlength: 5,
     },
+    isReel: {
+      type: Boolean,
+      default: false,
+    },
     postImageURL: {
       type: String,
       required: true,
