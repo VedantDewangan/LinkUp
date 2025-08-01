@@ -2,7 +2,7 @@ import { Post } from "../../Database/Model/PostModel.js";
 
 export const createPost = async (req, res) => {
   try {
-    const { caption, image_link } = req.body;
+    const { caption, image_link, isReel } = req.body;
     const { user } = req.user;
     if (!caption) {
       return res.status(400).json({
@@ -18,6 +18,7 @@ export const createPost = async (req, res) => {
       caption: caption,
       postImageURL: image_link,
       user: user._id,
+      isReel: isReel,
     });
     return res.status(201).json({
       message: "Image Posted successfully",
